@@ -7,9 +7,16 @@ Browse URLs on your Tailnet without a VPN!
 
 ## Building
 
-git submodule init
-git submodule update
+* Requires go 1.25.3
+* Requires iOS 26.0
+
+Grab the tailscalekit submodule... 
+
+``` bash
+$ git submodule update --init
+$ cd ThirdParty/libtailscale/swift
+$ make ios-fat
+```
 
 Build the TailBrowser scheme in xCode 26.2
 
-Requires iOS 26.0

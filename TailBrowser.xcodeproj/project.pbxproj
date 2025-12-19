@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C20F248B2EF1A0D300F57D67 /* TailscaleKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20F23E62EF09A7900F57D67 /* TailscaleKit.framework */; };
-		C20F248D2EF1A0DF00F57D67 /* TailscaleKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C20F23E62EF09A7900F57D67 /* TailscaleKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C20F248B2EF1A0D300F57D67 /* TailscaleKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20F23E62EF09A7900F57D67 /* TailscaleKit.xcframework */; };
+		C20F248D2EF1A0DF00F57D67 /* TailscaleKit.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C20F23E62EF09A7900F57D67 /* TailscaleKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +18,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C20F248D2EF1A0DF00F57D67 /* TailscaleKit.framework in CopyFiles */,
+				C20F248D2EF1A0DF00F57D67 /* TailscaleKit.xcframework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C20F23E62EF09A7900F57D67 /* TailscaleKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TailscaleKit.framework; path = "ThirdParty/libtailscale/swift/build/Build/Products/Release-iphoneos/TailscaleKit.framework"; sourceTree = "<group>"; };
+		C20F23E62EF09A7900F57D67 /* TailscaleKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TailscaleKit.xcframework; path = "ThirdParty/libtailscale/swift/build/Build/Products/Release-iphonefat/TailscaleKit.xcframework"; sourceTree = "<group>"; };
 		C20F24742EF19A5900F57D67 /* TailBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TailBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22045AD2EF45E7000242E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = TailBrowser/Info.plist; sourceTree = "<group>"; };
+		C25B4D752EF5F507000539A5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -64,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20F248B2EF1A0D300F57D67 /* TailscaleKit.framework in Frameworks */,
+				C20F248B2EF1A0D300F57D67 /* TailscaleKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,10 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				C22045AD2EF45E7000242E27 /* Info.plist */,
+				C25B4D752EF5F507000539A5 /* README.md */,
 				C20F24752EF19A5900F57D67 /* App */,
 				C20F24932EF1B4A700F57D67 /* TSNet */,
 				C213B98C2EE8BF80002D0531 /* Products */,
-				C20F23E62EF09A7900F57D67 /* TailscaleKit.framework */,
+				C20F23E62EF09A7900F57D67 /* TailscaleKit.xcframework */,
 				C20F248A2EF1A0D300F57D67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -105,7 +107,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C20F247E2EF19A5C00F57D67 /* Build configuration list for PBXNativeTarget "TailBrowser" */;
 			buildPhases = (
-				C20F24992EF1B89E00F57D67 /* ShellScript */,
 				C20F24702EF19A5900F57D67 /* Sources */,
 				C20F24712EF19A5900F57D67 /* Frameworks */,
 				C20F24722EF19A5900F57D67 /* Resources */,
@@ -168,27 +169,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C20F24992EF1B89E00F57D67 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/ThirdParty/libtailscale",
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd $SRCROOT/ThirdParty/libtailscale/swift\nmake ios\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C20F24702EF19A5900F57D67 /* Sources */ = {
